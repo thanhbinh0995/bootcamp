@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>pro4</title>
+	<link rel="stylesheet" href="css/styles4.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<form id="form1" action="" method="get" accept-charset="utf-8">
+				<div class="col-sm-4">
+					<label for="firstname">First name</label> 
+				</div>
+				<div class="col-sm-8">
+					<input type="text" id="firstname" name="firstname" placeholder="First name" value="   " /><br/>
+				</div>
+				<div class="col-sm-4">
+					<label for="lastname">Last name</label>
+				</div>
+				<div class="col-sm-8">
+					<input type="text" id="lastname" name="lastname" placeholder="Last name" value="   " /><br/>
+				</div>
+				<div class="col-sm-4">
+					<label for="sex">Sex</label>
+				</div>
+				<div class="col-sm-8">
+					<input class="sex" type="radio" name="sex" value="male" id="male">
+					<label for="male">Male</label>
+					<input class="sex" type="radio" name="sex" value="female" id="female" >
+					<label for="female">Female</label>
+				</div>
+				<br/>
+				<div class="col-sm-4">
+					<label for="nationality">Nationality</label>
+				</div>
+				<div class="col-sm-8">
+					<select name="national" multiple>
+						<option value="">Austria</option>
+						<option value="">Singapore</option>
+						<option value="">USA</option>
+						<option value="">Viet Nam</option>
+					</select>
+				</div>
+				<br/><br/>
+				<div class="col-sm-4">
+					<h5>Full name</h5> 
+				</div>
+				<div class="col-sm-8">
+					<h5 id="name">Full name</h5>
+				</div>
+				<div class="col-sm-4">
+					<h5>Sex</h5>
+				</div>
+				<div class="col-sm-8">
+					<h5 id="sex">Sex</h5>
+				</div>
+				<div class="col-sm-4">
+					<h5>nationality</h5>	
+				</div>
+				<div class="col-sm-8">
+					<h5 id="nationality">National</h5>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/change-event.js"></script>
+
+</body>
+</html>
