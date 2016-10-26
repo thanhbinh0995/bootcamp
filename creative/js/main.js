@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+jQuery(document).ready(function() {
 	var e = $(".portfolio-grid");
 	e.isotope({
 	    itemSelector: ".portfolio-item",
@@ -21,11 +21,32 @@ jQuery(document).ready(function($) {
 	        i.find(".active").removeClass("active"), $(this).addClass("active")
 	    })
 	})
-	var $section = $('#counter');
-	$(document).bind('scroll', function(ev) {
-		var scrollOffset = $(document).scrollTop();
-        var containerOffset = $section.offset().top - window.innerHeight;
-        $('.counter-num').each(function () {
+
+	// $('.counter-num').each(function () {
+	//     $(this).prop('Counter',0).animate({
+	//         Counter: $(this).text()
+	//     }, {
+	//         duration: 5000,
+	//         easing: 'swing',
+	//         step: function (now) {
+	//             $(this).text(Math.ceil(now));
+	//         }
+	//     });
+	// });
+	// jQuery('.skillbar').each(function(){
+	// 	jQuery(this).find('.skillbar-bar').animate({
+	// 		width:jQuery(this).attr('data-percent')
+	// 	},6000);
+	// });
+	function bar() {
+		jQuery('.skillbar').each(function(){
+			jQuery(this).find('.skillbar-bar').animate({
+				width:jQuery(this).attr('data-percent')
+			},6000);
+		});
+	}
+	function count() {
+		$('.counter-num').each(function () {
 		    $(this).prop('Counter',0).animate({
 		        Counter: $(this).text()
 		    }, {
@@ -36,19 +57,26 @@ jQuery(document).ready(function($) {
 		        }
 		    });
 		});
-	});
-
- 	$section = $('#specialization');
+	}
+	var $section = $('#specialization');
 	$(document).bind('scroll', function(ev) {
 		var scrollOffset = $(document).scrollTop();
         var containerOffset = $section.offset().top - window.innerHeight;
         if (scrollOffset > containerOffset) {
-			jQuery('.skillbar').find('.skillbar-bar').animate({
-				width:jQuery('.skillbar').attr('data-percent')
-			},6000);
-			$(document).unbind('scroll');
+			bar();
 		}
 	});
-});
+	// $(document).unbind('scroll');
+	var $section1 = $('#counter');
+	$(document).bind('scroll', function(ev) {
+		var scrollOffset1 = $(document).scrollTop();
+        var containerOffset1 = $section1.offset().top - window.innerHeight;
+        if (scrollOffset1 > containerOffset1) {
+			count();
+		}
+	});
 
+ 	
+
+});
 
