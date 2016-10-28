@@ -1,0 +1,30 @@
+.event-title {
+	padding: 30px 120px 40px 25px;
+}
+.event-title h3{
+	color: #404040;
+	font-family: 'Montserrat-Regular', Arial, sans-serif;
+}
+#events .row {
+	padding-bottom: 
+}
+#events > .row {
+	padding: 30px 0px;
+	margin-left: 25px;
+	border-bottom: 1px solid #e7e7e7;
+}
+#events > .padtop {
+	padding-top: 0;
+}
+#events > .padbot {
+	padding-bottom: 0;
+	border: none;
+}
+.news-main-content h5, .news-main-content p{
+	font-family: 'Montserrat-Regular', Arial, sans-serif;
+	color: #404040;
+}
+.news-main-content h5 {
+	color: #5eb146;
+	font-size: 16px;
+}

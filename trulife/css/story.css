@@ -104,8 +104,26 @@
 	font-family: 'Montserrat-Regular', Arial, sans-serif;
 }
 
-@media (max-width: 768px) {
-	.top-tile h5 {
-		padding-left: 0;
+@media (max-width: 767px) {
+	.img-content img {
+		width: auto;
+		max-width: none !important;
+		height: 250px;
 	}
+	.caption-content h2 {
+		font-size: 18px;
+	}
+	.top-tile {
+		/*margin-top: 30px;*/
+	}
+	.top-tile h3 {
+		font-size: 18px;
+	}
+	.top-tile h5 {
+		float: right;
+		padding-top: 15px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+
 }
