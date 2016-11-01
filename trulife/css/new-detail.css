@@ -1,0 +1,27 @@
+.detail-main-content {
+	padding-top: 40px;
+}
+.title {
+	padding-bottom: 30px;
+}
+.title h4 {
+	font-family: 'Montserrat-Bold', Arial, sans-serif;
+	font-size: 30px;
+	color: #63b44c;
+	text-transform: uppercase;
+}
+.detail-img-content {
+	padding-bottom: 40px;
+}
+.detail-img-content img {
+	height: 500px;
+}
+.detail {
+	padding: 0 80px;
+	padding-bottom: 100px;
+}
+.detail p {
+	padding-bottom: 25px;
+	font-family: 'Montserrat-Regular', Arial, sans-serif;
+	color: #919191;	
+}

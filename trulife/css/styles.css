@@ -53,7 +53,9 @@ form > input.search-input {
 	border: 1px solid #64b44e;
 	border-radius: 45%;
 }
-
+.pad-0 {
+	padding-right: 0;
+}
 #slider {
 	position: relative;
 }
@@ -133,6 +135,9 @@ form > input.search-input {
 	text-decoration: none;
 	color: #6d6e71;
 	font-family: 'Montserrat-Bold', Arial, sans-serif;
+}
+.elem-4 > ul > li{
+	padding-bottom: 22px;
 }
 .form-email form{
 	background-color: #fff;
@@ -265,7 +270,7 @@ form > input.search-input {
 	}
 
 	div-3, .div-6 {
-		padding-bottom: 20px;
+		padding-bottom: 15px;
 	}
 	.div-6 img{
 		box-sizing: border-box;

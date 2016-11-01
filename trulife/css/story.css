@@ -1,6 +1,9 @@
 #main-img {
 	position: relative;
 }
+.pad-0 {
+	padding-right: 0;
+}
 .img-content {
 	position: relative;
 }
@@ -44,6 +47,7 @@
 .list-title > ul {
 }
 .list-title ul > li {
+	float: none;
 	padding-bottom: 45px;
 }
 .list-title ul > li > a {
@@ -107,7 +111,7 @@
 @media (max-width: 767px) {
 	.img-content img {
 		width: auto;
-		max-width: none !important;
+		/*max-width: none !important;*/
 		height: 250px;
 	}
 	.caption-content h2 {

@@ -28,3 +28,25 @@
 	color: #5eb146;
 	font-size: 16px;
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.top-tile {
+		margin-top: -55px;
+	}
+	.top-tile h3 {
+		font-size: 17px;
+		padding: 17px 0;
+	}
+}
+@media (max-width: 767px) {
+	.top-tile h3 {
+		font-size: 16px;
+	}
+	.top-tile h5 {
+		font-size: 14px;
+		padding: 10px 15px;
+	}
+	.list-title > ul > li{
+		padding-bottom: 15px;
+	}
+}

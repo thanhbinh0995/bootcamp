@@ -1,0 +1,83 @@
+.main-container > .container {
+	padding: 0;
+}
+.top-tile {
+	margin-right: 0;
+	margin-left: 0;
+}
+.title {
+	padding-top: 40px;
+	padding-bottom: 25px;
+}
+.title h4{
+	color: #5eb146;
+	font-family: 'Montserrat-Regular', Arial, sans-serif;
+	font-size: 25px;
+}
+form {
+	position: relative;
+}
+.form-content {
+	background-color: #e5e5e5;
+	position: relative;
+}
+.form-content form {
+	padding: 40px;
+}
+.form-content form h4 {
+	padding-left: 15px;
+}
+.form-content > div > form >div > input, form textarea {
+	margin: 20px 0;
+	width: 400px;
+}
+.form-content form input.last {
+	margin-bottom: 60px;
+}
+.submit input {
+	width: 60px;
+}
+.contact-info {
+	background: #fff;
+	padding: 55px 0 110px 0;
+}
+.contact-info .title {
+	color: #5eb146;
+	font-family: 'Montserrat-Regular', Arial, sans-serif;
+	padding-bottom: 20px;
+	font-size: 20px;
+}
+.contact-info p {
+	font-family: 'Montserrat-Regular', Arial, sans-serif;
+	color: #404040;
+}
+.flag-info img {
+	padding-right: 7px;
+}
+@media (min-width: 1200px) {
+	.form-content > div > form >div > input, form textarea {
+		margin: 15px 0;
+		width: 500px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.form-content > div > form >div > input, form textarea {
+		margin: 15px 0;
+		width: 300px;
+	}
+	.form-content form input.last {
+		margin-bottom: 60px;
+	}
+}
+@media (max-width: 767px) {
+	.form-content > div > form >div > input, form textarea {
+		margin: 10px 0;
+		width: 300px;
+	}	
+}
+@media (max-width: 360px) {
+	.form-content > div > form >div > input, form textarea {
+		margin: 10px 0;
+		width: 200px;
+	}	
+}
