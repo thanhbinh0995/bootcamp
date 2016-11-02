@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from jplist.com/bootstrapexamples/bootstrap-pagination by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Nov 2016 15:07:19 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<!-- /Added by HTTrack -->
+
+<head>
+    <title>Bootstrap Pagination | jPList - jQuery Data Grid Controls</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="description" content="jPList Bootstrap sort dropdown control demo page." />
+    <meta name="keywords" content="jQuery plugin, Bootstrap, dropdown, drop down, paging, pagination, components" />
+
+
+    <!-- css -->
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet" />
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="http://jplist.com/content/css/bootstrap-demo.min.css" rel="stylesheet" />
+    <link href="http://jplist.com/content/img/common/favicon.png" rel="shortcut icon" />
+
+
+
+    <style>
+        .jplist-pagination-info {
+            margin: 15px 15px 0 40px;
+        }
+        .jplist-items-per-page {
+            margin: 15px 10px 0 0;
+        }
+        .jplist-pagination {
+            margin: 10px 10px 15px 30px;
+        }
+        .center-block {
+            width: 290px;
+            margin: 20px auto;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .list-item {
+        	padding: 0;
+        }
+    </style>
+
+
+    <!-- js -->
+    <script src="http://jplist.com/content/js/vendor/jquery-1.10.0.min.js"></script>
+    <script src="http://jplist.com/content/js/vendor/modernizr.min.js"></script>
+    <script src="http://jplist.com/content/js/vendor/jquery.lazyload.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+
+
+    <script src="http://jplist.com/content/js/jplist/5.2.0/jplist.core.min.js"></script>
+    <script src="http://jplist.com/content/js/jplist/5.2.0/jplist.bootstrap-pagination-bundle.min.js"></script>
+
+    <script>
+        $('document').ready(function() {
+            $('#demo').jplist({
+                itemsBox: '.list',
+                itemPath: '.list-item',
+                panelPath: '.jplist-panel'
+            });
+        });
+    </script>
+
+
+    <!-- google analytics -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-36006444-3', 'jplist.com');
+        ga('send', 'pageview');
+    </script>
+
+</head>
+
+<body>
+
+    <div class="page" id="demo">
+            <!-- jplist top panel -->
+        <div class="jplist-panel">
+            <div class="center-block">
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <!-- pagination info label -->
+                        <div class="pull-left jplist-pagination-info" data-type="<strong>Page {current} of {pages}</strong><br/> <small>{start} - {end} of {all}</small>" data-control-type="pagination-info" data-control-name="paging" data-control-action="paging"></div>
+
+                        <!-- items per page dropdown -->
+                        <div class="dropdown pull-left jplist-items-per-page" data-control-type="boot-items-per-page-dropdown" data-control-name="paging" data-control-action="paging">
+
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="dropdown-menu-1" aria-expanded="true">
+                                <span data-type="selected-text">Items per Page</span>
+                                <span class="caret"></span>
+                            </button>
+
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown-menu-1">
+
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1" href="#" data-number="3">3 per page</a>
+                                </li>
+
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1" href="#" data-number="5" data-default="true">5 per page</a>
+                                </li>
+
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1" href="#" data-number="10">10 per page</a>
+                                </li>
+
+                                <li role="presentation" class="divider"></li>
+
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1" href="#" data-number="all">View All</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <!-- bootstrap pagination control -->
+                        <ul class="pagination pull-left jplist-pagination" data-control-type="boot-pagination" data-control-name="paging" data-control-action="paging" data-range="3" data-mode="google-like">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jplist items list -->
+        <div class="list container">
+			<div class="row">
+				<div class="list-item">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<div class="product-content">
+							<img src="img/TruLife-TruProducts-1.png" alt="product">
+							<h4 class="name">Product name1</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt molestias modi ratione aliquam obcaecati</p>
+						</div>
+					</div>
+				</div>
+				<div class="list-item">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<div class="product-content">
+							<img src="img/TruLife-TruProducts-1.png" alt="product">
+							<h4 class="name">Product name2</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt molestias modi ratione aliquam obcaecati</p>
+						</div>
+					</div>
+				</div>
+				<div class="list-item">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<div class="product-content">
+							<img src="img/TruLife-TruProducts-1.png" alt="product">
+							<h4 class="name">Product name3</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt molestias modi ratione aliquam obcaecati</p>
+						</div>
+					</div>
+				</div>
+				<div class="list-item">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<div class="product-content">
+							<img src="img/TruLife-TruProducts-1.png" alt="product">
+							<h4 class="name">Product name4</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt molestias modi ratione aliquam obcaecati</p>
+						</div>
+					</div>
+				</div>
+				<div class="list-item">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<div class="product-content">
+							<img src="img/TruLife-TruProducts-1.png" alt="product">
+							<h4 class="name">Product name5</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt molestias modi ratione aliquam obcaecati</p>
+						</div>
+					</div>
+				</div>
+				<div class="list-item">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<div class="product-content">
+							<img src="img/TruLife-TruProducts-1.png" alt="product">
+							<h4 class="name">Product name6</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt molestias modi ratione aliquam obcaecati</p>
+						</div>
+					</div>
+				</div>
+				<div class="list-item">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<div class="product-content">
+							<img src="img/TruLife-TruProducts-1.png" alt="product">
+							<h4 class="name">Product name7</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt molestias modi ratione aliquam obcaecati</p>
+						</div>
+					</div>
+				</div>
+				<div class="list-item">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<div class="product-content">
+							<img src="img/TruLife-TruProducts-1.png" alt="product">
+							<h4 class="name">Product name8</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt molestias modi ratione aliquam obcaecati</p>
+						</div>
+					</div>
+				</div>
+				<div class="list-item">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<div class="product-content">
+							<img src="img/TruLife-TruProducts-1.png" alt="product">
+							<h4 class="name">Product name9</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt molestias modi ratione aliquam obcaecati</p>
+						</div>
+					</div>
+				</div>
+				<div class="list-item">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<div class="product-content">
+							<img src="img/TruLife-TruProducts-1.png" alt="product">
+							<h4 class="name">Product name10</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt molestias modi ratione aliquam obcaecati</p>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+
+</body>
+</html>
