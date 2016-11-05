@@ -1,3 +1,6 @@
+.error {
+	color: red;
+}
 .main-container > .container {
 	padding: 0;
 }
@@ -20,6 +23,7 @@ form#signupForm {
 .form-content > .formbg{
 	background-color: #e5e5e5;
 	position: relative;
+	padding-bottom: 60px;
 }
 .form-content form {
 	padding: 40px;
@@ -30,9 +34,6 @@ form#signupForm {
 .form-content > div > form >div > input, form textarea {
 	margin: 20px 0;
 	width: 400px;
-}
-.form-content form input.last {
-	margin-bottom: 60px;
 }
 .contact-info {
 	background: #fff;

@@ -5,7 +5,7 @@ jQuery(document).ready(function($) {
 				required: true,
 				maxlength: 25
 			},
-			Name: {
+			name: {
 				required: true,
 				maxlength: 25
 			},
@@ -16,6 +16,9 @@ jQuery(document).ready(function($) {
 				required: true,
 				number: true,
 				matches1: true
+			},
+			address: {
+				required: true
 			},
 			subject: {
 				required: true,
