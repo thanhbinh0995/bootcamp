@@ -19,7 +19,32 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
+.fixed {
+	position: fixed;
+	right: 0;
+	top: 30%;
+	z-index: 100;
+}
+.fixed a {
+	display: block;
+	text-align: center;
+}
+.fixed a i{
+	color: #fff;
+	padding: 7px 10px;
+}
+.fixed a.facebook {
+	background-color: #4460ae;
+}
+.fixed a.twitter {
+	background-color: #058cb9;
+}
+.fixed a.linkedin {
+	background-color: #2c86ba;
+}
+.fixed a.instagram {
+	background-color: #ce3e70;
+}
 /*header*/
 #header {
 	background-color: #fff;
@@ -55,6 +80,9 @@ form > input.search-input {
 }
 .pad-0 {
 	padding-right: 0;
+}
+.logo img {
+	margin-left: -30px;
 }
 #slider {
 	position: relative;
@@ -160,7 +188,7 @@ form > input.search-input {
 	padding: 5px 10px; 
 }
 #copy-right {
-	padding: 28px 0 45px 0; 
+	padding: 30px 0 40px 0; 
 }
 .foot-left {
 	float: left;
@@ -239,6 +267,7 @@ form > input.search-input {
 		padding: 10px 6px;
 		font-size: 13px ;
 	}
+
 	.text-home3 {
 		top: 45%;
 	}
@@ -336,9 +365,11 @@ form > input.search-input {
 		background-color: rgba(34,34,34,0.85);
 		float: none;
 	}
-
-	.single-slider img{
-		height: 320px !important;
+	.logo img {
+		margin: 0;
+	}
+	.single-slider img.img-home{
+		height: 320px;
 	}
 
 	.single-slider .carousel-caption {
@@ -375,6 +406,18 @@ form > input.search-input {
 	#main-content .pad-15 {
 		padding: 5px 15px;
 	}
+	.text-content {
+		font-size: 50px;
+	}
+	.text-content span {
+		font-size: 60px;
+	} 
+	#main-content .text-home3 {
+		top: 30%;
+	}
+	#main-content .text-home3 span {
+		font-size: 26px;
+	}
 	.linker {
 		padding-bottom: 10px;
 	}
@@ -386,5 +429,19 @@ form > input.search-input {
 	}
 	.linker img { 
 		padding: 20px 0;
+	}
+}
+@media (max-width: 480px){
+	.text-content {
+		font-size: 20px;
+	}
+	.text-content span {
+		font-size: 30px;
+	} 
+	#main-content .text-home3 {
+		top: 30%;
+	}
+	#main-content .text-home3 span {
+		font-size: 20px;
 	}
 }

@@ -1,0 +1,133 @@
+.logo img {
+	margin-left: -18px;
+}
+.top-tile {
+	margin: 0;
+}
+.product-main-content {
+	padding-top: 40px;
+}
+.single-slider {
+	margin: 0 20% auto;
+}
+.mar-0 {
+	margin: 0;
+}
+#slider .slide a.carousel-control {
+	background: #fff;
+	color: #fff;
+	font-size: 15px;
+	height: 27px;
+	top: 50%;
+	width: 30px;
+	z-index: 100;
+	border-radius: 50%;
+	border: 1px solid #a9adad;
+}
+
+#slider .slide a.left {
+	left: 10%;
+}
+#slider .slide a.right {
+	right: 10%;
+}
+#slider .slide a.carousel-control i {
+	color: #a9adad;
+}
+#slider .slide a.left-bot {
+	left: 0;
+} 
+#slider .slide a.right-bot {
+	right: 0;
+}
+#slider .slide a.carousel-control1 {
+	top: 30%;
+}
+
+.detail-main-content {
+	padding-top: 25px;
+	padding-bottom: 40px;
+}
+.detail-main-content h3 {
+	font-family: 'Montserrat-Regular', Arial, sans-serif;
+	color: #64b44e;
+	font-size: 20px;
+}
+.detail-main-content p {
+	font-family: 'Montserrat-Regular', Arial, sans-serif;
+	color: #404040;
+	text-align: left;
+}
+.detail-main-content .shop-now {
+	padding-top: 30px;
+}
+.shop-now a {
+	text-decoration: none;
+	color: #404040;
+}
+.shop-now a img {
+	margin-top: -22px;
+}
+.group {
+	display: inline-block;
+	padding-left: 10px;
+}
+.group > p {
+	margin: 0;
+}
+.detail-title-container  {
+	border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+}
+.detail-title-container {
+	padding-top: 23px;
+	padding-bottom: 30px;
+}
+.detail-title h4 {
+	float: left;
+	font-family: 'Montserrat-Regular', Arial, sans-serif;
+	font-weight: 300;
+	margin-top: 0;
+	text-transform: uppercase;
+}
+.view-all {
+	float: right;
+}
+.detail-title a {
+	text-decoration: none;
+	border: 1px solid #646464;
+	padding: 12px 30px;
+	color: #646464;
+	font-family: 'Montserrat-Regular', Arial, sans-serif;
+}
+.detail-title a:hover {
+	background-color: #00a2d2;
+}
+.border-right {
+	border-right: 1px solid #e9e9e9;
+}
+
+#carousel1 {
+	margin-top: 60px;	
+	margin-bottom: 40px;
+}
+.product-content {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+.product-content > h4 ,.product-content > p {
+	font-family: 'Montserrat-Regular', Arial, sans-serif;
+	color: #000;
+	text-align: center;
+}
+.product-content > h4 {
+	padding-top: 20px;
+}
+.product-content > p{
+	color: #919191;
+}
+@media (max-width: 767px) {
+	.logo img {
+		margin-left: -3px;
+	}
+}

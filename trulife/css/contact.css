@@ -1,10 +1,10 @@
 .main-container > .container {
 	padding: 0;
 }
-.top-tile {
+/*.top-tile {
 	margin-right: 0;
 	margin-left: 0;
-}
+}*/
 .title {
 	padding-top: 40px;
 	padding-bottom: 25px;
@@ -14,10 +14,10 @@
 	font-family: 'Montserrat-Regular', Arial, sans-serif;
 	font-size: 25px;
 }
-form {
+form#signupForm {
 	position: relative;
 }
-.form-content {
+.form-content > .formbg{
 	background-color: #e5e5e5;
 	position: relative;
 }
@@ -33,9 +33,6 @@ form {
 }
 .form-content form input.last {
 	margin-bottom: 60px;
-}
-.submit input {
-	width: 60px;
 }
 .contact-info {
 	background: #fff;
