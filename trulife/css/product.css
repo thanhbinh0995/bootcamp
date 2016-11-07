@@ -4,30 +4,6 @@
 .top-tile h4 {
 	padding: 8px 20px;
 }
-.page {
-	border: 0;
-}
-.jplist-panel h2 {
-	display: inline-block;
-	float: left;
-	color: #404040;
-	font-family: 'Montserrat-Regular', Arial, sans-serif;	
-	margin-top: 0;
-	padding-left: 25px;
-	font-size: 25px;
-}
-.jplist-pagination-info h4 {
-	font-family: 'Montserrat-Regular', Arial, sans-serif;	
-	color: #b8b8b8;
-	margin: 0;
-	font-size: 15px;
-}
-.jplist-pagination, .jplist-pagination-info, .jplist-items-per-page {
-	margin: 0;
-}
-.jplist-pagination-info {
-	padding: 10px 100px 0 10px;
-}
 .product-content img {
 	border: 0;
 }
@@ -35,8 +11,20 @@
 	font-family: 'Montserrat-Regular', Arial, sans-serif;
 	text-align: center;
 }
+.title-tab {}
+.title-tab h3, .title-tab select, .holder{
+	display: inline-block;
+}
+.holder {
+	float: right;
+}
+.title-tab .jp-previous {
+	/*float: right;*/
+}
+.title-tab .jp-next {
+	/*float: right;*/
+}
 .list-item > div.first {
-	
 }
 .list-item > div{
 	padding-bottom: 50px;
