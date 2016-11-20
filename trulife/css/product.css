@@ -1,4 +1,7 @@
-.enquire-bg {
+#category1 {
+	padding-right: 0;
+}
+.enquire-bg {	
 	background-color: #00a2d2;
 }
 .top-tile h4 {
@@ -15,8 +18,12 @@
 .title-tab h3, .title-tab select, .holder{
 	display: inline-block;
 }
+.title-tab h3 {
+	padding-left: 25px;
+}
 .holder {
 	float: right;
+	padding-top: 25px;
 }
 .title-tab .jp-previous {
 	/*float: right;*/
@@ -28,6 +35,25 @@
 }
 .list-item > div{
 	padding-bottom: 50px;
+}
+#select-page {
+	margin-left: 50px;
+}
+.holder {}
+.holder a {
+	padding: 10px;
+}
+.holder a.jp-previous, .holder a.jp-next{ 
+	padding: 2px 5px;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	margin: 0 5px;
+	color: black;
+	font-family: 'Montserrat-Regular', Arial, sans-serif;
+	text-decoration: none;
+}
+.holder a:hover {
+	color: #00a2d2;
 }
 @media (min-width: 768px) and (max-width: 992px) {
 	.top-tile h4 {
